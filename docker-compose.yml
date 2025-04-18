@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  familylawbot:
+    image: familylawbot
+    build:
+      context: ./FamilyLawBot
+      dockerfile: Dockerfile
