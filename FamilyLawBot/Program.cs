@@ -53,7 +53,7 @@ namespace KarinaLawBot
                 return new AppSettings()
                 {
                     DownloadsFolder = "C:\\Users\\dsank\\Downloads",
-                    BotToken = "7756736091:AAGJCCm-PgeSXAsPjGYO7H9feP6jxjCJLK0",
+                    BotToken = "7756736091:AAGY2-hIwV0_rdsmm6OS3UgmIaXFwXJJYn0",
                     AudioFileName = "audio",
                     InputAudioFormat = "ogg",
                     OutputAudioFormat = "wav",
