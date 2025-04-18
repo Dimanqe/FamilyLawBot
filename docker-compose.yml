@@ -6,3 +6,5 @@ services:
     build:
       context: ./FamilyLawBot
       dockerfile: Dockerfile
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}

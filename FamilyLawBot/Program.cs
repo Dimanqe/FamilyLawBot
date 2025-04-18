@@ -48,18 +48,18 @@ namespace KarinaLawBot
 
                
             }
-            static AppSettings BuildAppSettings()
+        static AppSettings BuildAppSettings()
+        {
+            return new AppSettings()
             {
-                return new AppSettings()
-                {
-                    DownloadsFolder = "C:\\Users\\dsank\\Downloads",
-                    BotToken = "7756736091:AAGY2-hIwV0_rdsmm6OS3UgmIaXFwXJJYn0",
-                    AudioFileName = "audio",
-                    InputAudioFormat = "ogg",
-                    OutputAudioFormat = "wav",
-                    InputAudioBitrate = 48000
-                };
-            }
+                DownloadsFolder = "C:\\Users\\dsank\\Downloads",
+                BotToken = Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN"),
+                AudioFileName = "audio",
+                InputAudioFormat = "ogg",
+                OutputAudioFormat = "wav",
+                InputAudioBitrate = 48000
+            };
         }
+    }
     
 }
