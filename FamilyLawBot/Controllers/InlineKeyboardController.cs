@@ -206,8 +206,20 @@ public class InlineKeyboardController
                 break;
             case "Запись на консультацию":
                 session.CurrentMenu = "registration";
-                await ShowSubsection(callbackQuery, "Запись на консультацию",
-                    "Запись на консультацию",
+                var buttons = new List<InlineKeyboardButton[]>
+                {
+                    new[] { InlineKeyboardButton.WithUrl(
+                        "Заполнить форму для записи",
+                        "https://docs.google.com/forms/d/16CKy-03D_WXJMvGCFj5BRB3tX9iznciP8fZrc7dxx9M/edit"
+                    )},
+                    new[] { InlineKeyboardButton.WithCallbackData("← Назад") },
+                    new[] { InlineKeyboardButton.WithCallbackData("Главное меню") }
+                };
+
+                await EditMenuMessage(
+                    callbackQuery,
+                    "<b>Юридическая консультация</b>\n\nПожалуйста, заполните форму для записи на консультацию:",
+                    buttons,
                     ct);
                 break;
             case "Поиск информации":
