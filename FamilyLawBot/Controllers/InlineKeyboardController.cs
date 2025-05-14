@@ -427,7 +427,7 @@ public class InlineKeyboardController
     }
     private async Task ShowConsultationMenu(CallbackQuery callbackQuery, CancellationToken ct)
     {
-        var lawyerUsernames = new List<string> { "paiiiram", "mbilshgh", "kkkk_aaaaa" };
+        var lawyerUsernames = new List<string> { "ppairamm", "mbilshgh", "kkkk_aaaaa" };
         var random = new Random();
         var randomLawyerUsername = lawyerUsernames[random.Next(lawyerUsernames.Count)];
         var buttons = new List<InlineKeyboardButton[]>
